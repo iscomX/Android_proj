@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.iscom.sharedprefs.R;
 
@@ -67,11 +69,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    // tbadar taswat wi gha klik 7o boton
+    public void image() {
+        ImageView img = (ImageView) findViewById(R.id.id_imageView_1);
+        img.setImageResource(R.drawable.img_b);
+
+    }
+
+
     public void clickAction(View view) {
-        EditText Name = (EditText) findViewById(R.id.EditTxt_Name);
-        EditText Password = (EditText) findViewById(R.id.EditTxt_Password);
+        EditText Name = (EditText) findViewById(R.id.id_EditText_Name);
+        EditText Password = (EditText) findViewById(R.id.id_EditText_Password);
 
         Log.i("info", "name : " + Name.getText().toString());
         Log.i("info", "password : " + Password.getText().toString());
+
+        //Toast
+        Toast.makeText(MainActivity.this, "name : " + Name.getText().toString() +
+                " -- password : " + Password.getText().toString(), Toast.LENGTH_LONG).show();
+
+        image();
     }
+
 }
