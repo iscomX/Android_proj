@@ -35,4 +35,8 @@
     <string name="EnterNumber">Enter Number</string>
     <string name="Converte">Convert</string>
     <string name="Converted_Currency">Converted Currency</string>
+    <string name="Currency_Convert">Currency Convert</string>
+    <string name="Random_Game">Random Game</string>
+    <string name="Start">Start</string>
+    <string name="Result">Result</string>
 </resources>

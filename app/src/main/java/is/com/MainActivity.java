@@ -71,7 +71,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(myIntent);
 
         } else if (id == R.id.menu_2) {
-            Toast.makeText(getApplicationContext(), "item1 is selected", Toast.LENGTH_SHORT).show();
+            Intent myIntent = new Intent(this, RandomGame.class);
+            startActivity(myIntent);
+
         } else if (id == R.id.menu_3) {
             Toast.makeText(getApplicationContext(), "item1 is selected", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.menu_4) {

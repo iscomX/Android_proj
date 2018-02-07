@@ -14,10 +14,12 @@
             android:label="@string/activity_principal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="is.com.Currency_Converter"></activity>
+        <activity android:name="is.com.Currency_Converter" />
+        <activity android:name="is.com.RandomGame"></activity>
     </application>
 
 </manifest>
