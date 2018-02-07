@@ -32,4 +32,7 @@
     <string name="Name">Name</string>
     <string name="Password">Password</string>
     <string name="img">this is an imag</string>
+    <string name="EnterNumber">Enter Number</string>
+    <string name="Converte">Convert</string>
+    <string name="Converted_Currency">Converted Currency</string>
 </resources>
