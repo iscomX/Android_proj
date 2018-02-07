@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="redA">#ffebee
+    </color>
+    <color name="redB">#ffcdd2
+    </color>
+    <color name="redC">#ef9a9a
+    </color>
+    <color name="redD">#e57373
+    </color>
+    <color name="redE">#ef5350
+    </color>
+    <color name="redF">#f44336
+    </color>
+    <color name="redG">#e53935
+    </color>
+    <color name="redH">#d32f2f
+    </color>
+    <color name="redI">#c62828
+    </color>
+    <color name="redJ">#b71c1c
+    </color>
+    <color name="redW">#ff8a80
+    </color>
+    <color name="redX">#ff5252
+    </color>
+    <color name="redY">#ff1744
+    </color>
+    <color name="redZ">#d50000
+
+    </color>
+    <color name="pinkA">#fce4ec
+    </color>
+    <color name="pinkB">#f8bbd0
+    </color>
+    <color name="pinkC">#f48fb1
+    </color>
+    <color name="pinkD">#f06292
+    </color>
+    <color name="pinkE">#ec407a
+    </color>
+    <color name="pinkF">#e91e63
+    </color>
+    <color name="pinkG">#d81b60
+    </color>
+    <color name="pinkH">#c2185b
+    </color>
+    <color name="pinkI">#ad1457
+    </color>
+    <color name="pinkJ">#880e4f
+    </color>
+    <color name="pinkW">#ff80ab
+    </color>
+    <color name="pinkX">#ff4081
+    </color>
+    <color name="pinkY">#f50057
+    </color>
+    <color name="pinkZ">#c51162
+
+    </color>
+    <color name="purpleA">#f3e5f5
+    </color>
+    <color name="purpleB">#e1bee7
+    </color>
+    <color name="purpleC">#ce93d8
+    </color>
+    <color name="purpleD">#ba68c8
+    </color>
+    <color name="purpleE">#ab47bc
+    </color>
+    <color name="purpleF">#9c27b0
+    </color>
+    <color name="purpleG">#8e24aa
+    </color>
+    <color name="purpleH">#7b1fa2
+    </color>
+    <color name="purpleI">#6a1b9a
+    </color>
+    <color name="purpleJ">#4a148c
+    </color>
+    <color name="purpleW">#ea80fc
+    </color>
+    <color name="purpleX">#e040fb
+    </color>
+    <color name="purpleY">#d500f9
+    </color>
+    <color name="purpleZ">#aa00ff
+
+    </color>
+    <color name="deepPurpleA">#ede7f6
+    </color>
+    <color name="deepPurpleB">#d1c4e9
+    </color>
+    <color name="deepPurpleC">#b39ddb
+    </color>
+    <color name="deepPurpleD">#9575cd
+    </color>
+    <color name="deepPurpleE">#7e57c2
+    </color>
+    <color name="deepPurpleF">#673ab7
+    </color>
+    <color name="deepPurpleG">#5e35b1
+    </color>
+    <color name="deepPurpleH">#512da8
+    </color>
+    <color name="deepPurpleI">#4527a0
+    </color>
+    <color name="deepPurpleJ">#311b92
+    </color>
+    <color name="deepPurpleW">#b388ff
+    </color>
+    <color name="deepPurpleX">#7c4dff
+    </color>
+    <color name="deepPurpleY">#651fff
+    </color>
+    <color name="deepPurpleZ">#6200ea
+
+    </color>
+    <color name="indigoA">#e8eaf6
+    </color>
+    <color name="indigoB">#c5cae9
+    </color>
+    <color name="indigoC">#9fa8da
+    </color>
+    <color name="indigoD">#7986cb
+    </color>
+    <color name="indigoE">#5c6bc0
+    </color>
+    <color name="indigoF">#3f51b5
+    </color>
+    <color name="indigoG">#3949ab
+    </color>
+    <color name="indigoH">#303f9f
+    </color>
+    <color name="indigoI">#283593
+    </color>
+    <color name="indigoJ">#1a237e
+    </color>
+    <color name="indigoW">#8c9eff
+    </color>
+    <color name="indigoX">#536dfe
+    </color>
+    <color name="indigoY">#3d5afe
+    </color>
+    <color name="indigoZ">#304ffe
+
+    </color>
+    <color name="blueA">#e3f2fd
+    </color>
+    <color name="blueB">#bbdefb
+    </color>
+    <color name="blueC">#90caf9
+    </color>
+    <color name="blueD">#64b5f6
+    </color>
+    <color name="blueE">#42a5f5
+    </color>
+    <color name="blueF">#2196f3
+    </color>
+    <color name="blueG">#1e88e5
+    </color>
+    <color name="blueH">#1976d2
+    </color>
+    <color name="blueI">#1565c0
+    </color>
+    <color name="blueJ">#0d47a1
+    </color>
+    <color name="blueW">#82b1ff
+    </color>
+    <color name="blueX">#448aff
+    </color>
+    <color name="blueY">#2979ff
+    </color>
+    <color name="blueZ">#2962ff
+
+    </color>
+    <color name="lightBlueA">#e1f5fe
+    </color>
+    <color name="lightBlueB">#b3e5fc
+    </color>
+    <color name="lightBlueC">#81d4fa
+    </color>
+    <color name="lightBlueD">#4fc3f7
+    </color>
+    <color name="lightBlueE">#29b6f6
+    </color>
+    <color name="lightBlueF">#03a9f4
+    </color>
+    <color name="lightBlueG">#039be5
+    </color>
+    <color name="lightBlueH">#0288d1
+    </color>
+    <color name="lightBlueI">#0277bd
+    </color>
+    <color name="lightBlueJ">#01579b
+    </color>
+    <color name="lightBlueW">#80d8ff
+    </color>
+    <color name="lightBlueX">#40c4ff
+    </color>
+    <color name="lightBlueY">#00b0ff
+    </color>
+    <color name="lightBlueZ">#0091ea
+
+    </color>
+    <color name="cyanA">#e0f7fa
+    </color>
+    <color name="cyanB">#b2ebf2
+    </color>
+    <color name="cyanC">#80deea
+    </color>
+    <color name="cyanD">#4dd0e1
+    </color>
+    <color name="cyanE">#26c6da
+    </color>
+    <color name="cyanF">#00bcd4
+    </color>
+    <color name="cyanG">#00acc1
+    </color>
+    <color name="cyanH">#0097a7
+    </color>
+    <color name="cyanI">#00838f
+    </color>
+    <color name="cyanJ">#006064
+    </color>
+    <color name="cyanW">#84ffff
+    </color>
+    <color name="cyanX">#18ffff
+    </color>
+    <color name="cyanY">#00e5ff
+    </color>
+    <color name="cyanZ">#00b8d4
+
+    </color>
+    <color name="tealA">#e0f2f1
+    </color>
+    <color name="tealB">#b2dfdb
+    </color>
+    <color name="tealC">#80cbc4
+    </color>
+    <color name="tealD">#4db6ac
+    </color>
+    <color name="tealE">#26a69a
+    </color>
+    <color name="tealF">#009688
+    </color>
+    <color name="tealG">#00897b
+    </color>
+    <color name="tealH">#00796b
+    </color>
+    <color name="tealI">#00695c
+    </color>
+    <color name="tealJ">#004d40
+    </color>
+    <color name="tealW">#a7ffeb
+    </color>
+    <color name="tealX">#64ffda
+    </color>
+    <color name="tealY">#1de9b6
+    </color>
+    <color name="tealZ">#00bfa5
+
+    </color>
+    <color name="greenA">#e8f5e9
+    </color>
+    <color name="greenB">#c8e6c9
+    </color>
+    <color name="greenC">#a5d6a7
+    </color>
+    <color name="greenD">#81c784
+    </color>
+    <color name="greenE">#66bb6a
+    </color>
+    <color name="greenF">#4caf50
+    </color>
+    <color name="greenG">#43a047
+    </color>
+    <color name="greenH">#388e3c
+    </color>
+    <color name="greenI">#2e7d32
+    </color>
+    <color name="greenJ">#1b5e20
+    </color>
+    <color name="greenW">#b9f6ca
+    </color>
+    <color name="greenX">#69f0ae
+    </color>
+    <color name="greenY">#00e676
+    </color>
+    <color name="greenZ">#00c853
+
+    </color>
+    <color name="lightGreenA">#f1f8e9
+    </color>
+    <color name="lightGreenB">#dcedc8
+    </color>
+    <color name="lightGreenC">#c5e1a5
+    </color>
+    <color name="lightGreenD">#aed581
+    </color>
+    <color name="lightGreenE">#9ccc65
+    </color>
+    <color name="lightGreenF">#8bc34a
+    </color>
+    <color name="lightGreenG">#7cb342
+    </color>
+    <color name="lightGreenH">#689f38
+    </color>
+    <color name="lightGreenI">#558b2f
+    </color>
+    <color name="lightGreenJ">#33691e
+    </color>
+    <color name="lightGreenW">#ccff90
+    </color>
+    <color name="lightGreenX">#b2ff59
+    </color>
+    <color name="lightGreenY">#76ff03
+    </color>
+    <color name="lightGreenZ">#64dd17
+
+    </color>
+    <color name="limeA">#f9fbe7
+    </color>
+    <color name="limeB">#f0f4c3
+    </color>
+    <color name="limeC">#e6ee9c
+    </color>
+    <color name="limeD">#dce775
+    </color>
+    <color name="limeE">#d4e157
+    </color>
+    <color name="limeF">#cddc39
+    </color>
+    <color name="limeG">#c0ca33
+    </color>
+    <color name="limeH">#afb42b
+    </color>
+    <color name="limeI">#9e9d24
+    </color>
+    <color name="limeJ">#827717
+    </color>
+    <color name="limeW">#f4ff81
+    </color>
+    <color name="limeX">#eeff41
+    </color>
+    <color name="limeY">#c6ff00
+    </color>
+    <color name="limeZ">#aeea00
+
+    </color>
+    <color name="yellowA">#fffde7
+    </color>
+    <color name="yellowB">#fff9c4
+    </color>
+    <color name="yellowC">#fff59d
+    </color>
+    <color name="yellowD">#fff176
+    </color>
+    <color name="yellowE">#ffee58
+    </color>
+    <color name="yellowF">#ffeb3b
+    </color>
+    <color name="yellowG">#fdd835
+    </color>
+    <color name="yellowH">#fbc02d
+    </color>
+    <color name="yellowI">#f9a825
+    </color>
+    <color name="yellowJ">#f57f17
+    </color>
+    <color name="yellowW">#ffff8d
+    </color>
+    <color name="yellowX">#ffff00
+    </color>
+    <color name="yellowY">#ffea00
+    </color>
+    <color name="yellowZ">#ffd600
+
+    </color>
+    <color name="amberA">#fff8e1
+    </color>
+    <color name="amberB">#ffecb3
+    </color>
+    <color name="amberC">#ffe082
+    </color>
+    <color name="amberD">#ffd54f
+    </color>
+    <color name="amberE">#ffca28
+    </color>
+    <color name="amberF">#ffc107
+    </color>
+    <color name="amberG">#ffb300
+    </color>
+    <color name="amberH">#ffa000
+    </color>
+    <color name="amberI">#ff8f00
+    </color>
+    <color name="amberJ">#ff6f00
+    </color>
+    <color name="amberW">#ffe57f
+    </color>
+    <color name="amberX">#ffd740
+    </color>
+    <color name="amberY">#ffc400
+    </color>
+    <color name="amberZ">#ffab00
+
+    </color>
+    <color name="orangeA">#fff3e0
+    </color>
+    <color name="orangeB">#ffe0b2
+    </color>
+    <color name="orangeC">#ffcc80
+    </color>
+    <color name="orangeD">#ffb74d
+    </color>
+    <color name="orangeE">#ffa726
+    </color>
+    <color name="orangeF">#ff9800
+    </color>
+    <color name="orangeG">#fb8c00
+    </color>
+    <color name="orangeH">#f57c00
+    </color>
+    <color name="orangeI">#ef6c00
+    </color>
+    <color name="orangeJ">#e65100
+    </color>
+    <color name="orangeW">#ffd180
+    </color>
+    <color name="orangeX">#ffab40
+    </color>
+    <color name="orangeY">#ff9100
+    </color>
+    <color name="orangeZ">#ff6d00
+
+    </color>
+    <color name="deepOrangeA">#fbe9e7
+    </color>
+    <color name="deepOrangeB">#ffccbc
+    </color>
+    <color name="deepOrangeC">#ffab91
+    </color>
+    <color name="deepOrangeD">#ff8a65
+    </color>
+    <color name="deepOrangeE">#ff7043
+    </color>
+    <color name="deepOrangeF">#ff5722
+    </color>
+    <color name="deepOrangeG">#f4511e
+    </color>
+    <color name="deepOrangeH">#e64a19
+    </color>
+    <color name="deepOrangeI">#d84315
+    </color>
+    <color name="deepOrangeJ">#bf360c
+    </color>
+    <color name="deepOrangeW">#ff9e80
+    </color>
+    <color name="deepOrangeX">#ff6e40
+    </color>
+    <color name="deepOrangeY">#ff3d00
+    </color>
+    <color name="deepOrangeZ">#dd2c00
+
+    </color>
+    <color name="brownA">#efebe9
+    </color>
+    <color name="brownB">#d7ccc8
+    </color>
+    <color name="brownC">#bcaaa4
+    </color>
+    <color name="brownD">#a1887f
+    </color>
+    <color name="brownE">#8d6e63
+    </color>
+    <color name="brownF">#795548
+    </color>
+    <color name="brownG">#6d4c41
+    </color>
+    <color name="brownH">#5d4037
+    </color>
+    <color name="brownI">#4e342e
+    </color>
+    <color name="brownJ">#3e2723
+
+    </color>
+    <color name="grayA">#fafafa
+    </color>
+    <color name="grayB">#f5f5f5
+    </color>
+    <color name="grayC">#eeeeee
+    </color>
+    <color name="grayD">#e0e0e0
+    </color>
+    <color name="grayE">#bdbdbd
+    </color>
+    <color name="grayF">#9e9e9e
+    </color>
+    <color name="grayG">#757575
+    </color>
+    <color name="grayH">#616161
+    </color>
+    <color name="grayI">#424242
+    </color>
+    <color name="grayJ">#212121
+
+    </color>
+    <color name="blueGrayA">#eceff1
+    </color>
+    <color name="blueGrayB">#cfd8dc
+    </color>
+    <color name="blueGrayC">#b0bec5
+    </color>
+    <color name="blueGrayD">#90a4ae
+    </color>
+    <color name="blueGrayE">#78909c
+    </color>
+    <color name="blueGrayF">#607d8b
+    </color>
+    <color name="blueGrayG">#546e7a
+    </color>
+    <color name="blueGrayH">#455a64
+    </color>
+    <color name="blueGrayI">#37474f
+    </color>
+    <color name="blueGrayJ">#263238</color>
+
+
+</resources>

@@ -1,0 +1,181 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32756 bytes for ChunkPool::allocate
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:273), pid=2152, tid=0x00000d70
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_121-b13) (build 1.8.0_121-b13)
+# Java VM: Java HotSpot(TM) Client VM (25.121-b13 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x45008c00):  JavaThread "C1 CompilerThread0" daemon [_thread_in_native, id=3440, stack(0x45410000,0x45460000)]
+
+Stack: [0x45410000,0x45460000],  sp=0x4545eb18,  free space=314k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1aa3bb]
+V  [jvm.dll+0x1a2bf8]
+V  [jvm.dll+0x8cb81]
+V  [jvm.dll+0x8cd5d]
+V  [jvm.dll+0x8d1f7]
+V  [jvm.dll+0xa4bf4]
+V  [jvm.dll+0x60e0f]
+V  [jvm.dll+0x7679c]
+V  [jvm.dll+0x2a284a]
+V  [jvm.dll+0x2a2eef]
+V  [jvm.dll+0x2a308d]
+V  [jvm.dll+0x2a5a8e]
+V  [jvm.dll+0x28a219]
+V  [jvm.dll+0x28a2ea]
+V  [jvm.dll+0x28a458]
+V  [jvm.dll+0x28a6d2]
+V  [jvm.dll+0x7066a]
+V  [jvm.dll+0x70e1f]
+V  [jvm.dll+0x17d800]
+V  [jvm.dll+0x17e07a]
+V  [jvm.dll+0x1c2ae6]
+C  [msvcr100.dll+0x5c556]
+C  [msvcr100.dll+0x5c600]
+C  [kernel32.dll+0x1336a]
+C  [ntdll.dll+0x39902]
+C  [ntdll.dll+0x398d5]
+C  0x00000000
+
+
+Current CompileTask:
+C1:   1938  271   !        
+[error occurred during error reporting (printing current compile task), id 0xe0000001]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x45123800 JavaThread "pool-1-thread-4" [_thread_blocked, id=5036, stack(0x45bc0000,0x45c10000)]
+  0x450fe400 JavaThread "pool-1-thread-3" [_thread_blocked, id=4144, stack(0x45b20000,0x45b70000)]
+  0x450fdc00 JavaThread "pool-1-thread-2" [_thread_blocked, id=5256, stack(0x45a00000,0x45a50000)]
+  0x450fa800 JavaThread "pool-2-thread-1" [_thread_blocked, id=5304, stack(0x456c0000,0x45710000)]
+  0x450f7400 JavaThread "pool-1-thread-1" [_thread_blocked, id=3468, stack(0x45670000,0x456c0000)]
+  0x45031400 JavaThread "Service Thread" daemon [_thread_blocked, id=2916, stack(0x45730000,0x45780000)]
+=>0x45008c00 JavaThread "C1 CompilerThread0" daemon [_thread_in_native, id=3440, stack(0x45410000,0x45460000)]
+  0x45007c00 JavaThread "Attach Listener" daemon [_thread_blocked, id=4108, stack(0x45530000,0x45580000)]
+  0x00cffc00 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=5352, stack(0x45470000,0x454c0000)]
+  0x00cf2400 JavaThread "Finalizer" daemon [_thread_blocked, id=3724, stack(0x04780000,0x047d0000)]
+  0x00cec400 JavaThread "Reference Handler" daemon [_thread_blocked, id=2724, stack(0x45200000,0x45250000)]
+  0x00bdc800 JavaThread "main" [_thread_in_native, id=5964, stack(0x00b50000,0x00ba0000)]
+
+Other Threads:
+  0x00ce6000 VMThread [stack: 0x44e80000,0x44ed0000] [id=6040]
+  0x4500c800 WatcherThread [stack: 0x45580000,0x455d0000] [id=5080]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00bda958] Threads_lock - owner thread: 0x00ce6000
+[0x00bdad68] Heap_lock - owner thread: 0x450fe400
+
+Heap:
+ def new generation   total 4928K, used 4928K [0x04800000, 0x04d50000, 0x19d50000)
+  eden space 4416K, 100% used [0x04800000, 0x04c50000, 0x04c50000)
+  from space 512K, 100% used [0x04c50000, 0x04cd0000, 0x04cd0000)
+  to   space 512K,   0% used [0x04cd0000, 0x04cd05a8, 0x04d50000)
+ tenured generation   total 10944K, used 2546K [0x19d50000, 0x1a800000, 0x44800000)
+   the space 10944K,  23% used [0x19d50000, 0x19fcc860, 0x19fcca00, 0x1a800000)
+ Metaspace       used 3396K, capacity 3494K, committed 3520K, reserved 4480K
+
+Card table byte_map: [0x00d90000,0x00fa0000] byte_map_base: 0x00d6c000
+
+Polling page: 0x001c0000
+
+CodeCache: size=32768Kb used=1024Kb max_used=1024Kb free=31743Kb
+ bounds [0x026f0000, 0x027f8000, 0x046f0000]
+ total_blobs=414 nmethods=271 adapters=74
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 1.727 Thread 0x45008c00 nmethod 266 0x027ef1c8 code [0x027ef2c0, 0x027ef370]
+Event: 1.727 Thread 0x45008c00  267             com.android.dx.rop.code.BasicBlock::getPrimarySuccessor (5 bytes)
+Event: 1.727 Thread 0x45008c00 nmethod 267 0x027ef448 code [0x027ef540, 0x027ef5c0]
+Event: 1.728 Thread 0x45008c00  268             com.android.dx.util.Bits::get (25 bytes)
+Event: 1.728 Thread 0x45008c00 nmethod 268 0x027ef608 code [0x027ef700, 0x027ef7b0]
+Event: 1.728 Thread 0x45008c00  269             com.android.dx.rop.code.BasicBlockList::labelToBlock (46 bytes)
+Event: 1.730 Thread 0x45008c00 nmethod 269 0x027ef888 code [0x027ef9e0, 0x027efce4]
+Event: 1.730 Thread 0x45008c00  270             com.android.dx.dex.code.DalvInsn::<init> (67 bytes)
+Event: 1.731 Thread 0x45008c00 nmethod 270 0x027eff88 code [0x027f00b0, 0x027f02c4]
+Event: 1.731 Thread 0x45008c00  271   !         com.android.dx.cf.code.BytecodeArray::parseInstruction (2764 bytes)
+
+GC Heap History (4 events):
+Event: 0.999 GC heap before
+{Heap before GC invocations=0 (full 0):
+ def new generation   total 4928K, used 4416K [0x04800000, 0x04d50000, 0x19d50000)
+  eden space 4416K, 100% used [0x04800000, 0x04c50000, 0x04c50000)
+  from space 512K,   0% used [0x04c50000, 0x04c50000, 0x04cd0000)
+  to   space 512K,   0% used [0x04cd0000, 0x04cd0000, 0x04d50000)
+ tenured generation   total 10944K, used 0K [0x19d50000, 0x1a800000, 0x44800000)
+   the space 10944K,   0% used [0x19d50000, 0x19d50000, 0x19d50200, 0x1a800000)
+ Metaspace       used 2700K, capacity 2822K, committed 2880K, reserved 4480K
+Event: 1.017 GC heap after
+Heap after GC invocations=1 (full 0):
+ def new generation   total 4928K, used 512K [0x04800000, 0x04d50000, 0x19d50000)
+  eden space 4416K,   0% used [0x04800000, 0x04800000, 0x04c50000)
+  from space 512K, 100% used [0x04cd0000, 0x04d50000, 0x04d50000)
+  to   space 512K,   0% used [0x04c50000, 0x04c50000, 0x04cd0000)
+ tenured generation   total 10944K, used 1051K [0x19d50000, 0x1a800000, 0x44800000)
+   the space 10944K,   9% used [0x19d50000, 0x19e56fc8, 0x19e57000, 0x1a800000)
+ Metaspace       used 2700K, capacity 2822K, committed 2880K, reserved 4480K
+}
+Event: 1.530 GC heap before
+{Heap before GC invocations=1 (full 0):
+ def new generation   total 4928K, used 4928K [0x04800000, 0x04d50000, 0x19d50000)
+  eden space 4416K, 100% used [0x04800000, 0x04c50000, 0x04c50000)
+  from space 512K, 100% used [0x04cd0000, 0x04d50000, 0x04d50000)
+  to   space 512K,   0% used [0x04c50000, 0x04c50000, 0x04cd0000)
+ tenured generation   total 10944K, used 1051K [0x19d50000, 0x1a800000, 0x44800000)
+   the space 10944K,   9% used [0x19d50000, 0x19e56fc8, 0x19e57000, 0x1a800000)
+ Metaspace       used 3355K, capacity 3462K, committed 3520K, reserved 4480K
+Event: 1.552 GC heap after
+Heap after GC invocations=2 (full 0):
+ def new generation   total 4928K, used 512K [0x04800000, 0x04d50000, 0x19d50000)
+  eden space 4416K,   0% used [0x04800000, 0x04800000, 0x04c50000)
+  from space 512K, 100% used [0x04c50000, 0x04cd0000, 0x04cd0000)
+  to   space 512K,   0% used [0x04cd0000, 0x04cd0000, 0x04d50000)
+ tenured generation   total 10944K, used 2522K [0x19d50000, 0x1a800000, 0x44800000)
+   the space 10944K,  23% used [0x19d50000, 0x19fc6888, 0x19fc6a00, 0x1a800000)
+ Metaspace       used 3355K, capacity 3462K, committed 3520K, reserved 4480K
+}
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (2 events):
+Event: 0.128 Thread 0x00bdc800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x04806e98) thrown at [C:\workspace\8-2-build-windows-i586-cygwin\jdk8u121\8372\hotspot\src\share\vm
+Event: 0.128 Thread 0x00bdc800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x04807168) thrown at [C:\workspace\8-2-build-windows-i586-cygwin\jdk8u121\8372\hotspot\src\share\vm\prims\jni.cpp, li
+
+Events (10 events):
+Event: 1.658 loading class com/android/dx/dex/file/UniformListItem
+Event: 1.658 loading class com/android/dx/dex/file/UniformListItem done
+Event: 1.658 loading class com/android/dx/cf/code/SwitchList
+Event: 1.658 loading class com/android/dx/cf/code/SwitchList done
+Event: 1.660 loading class com/android/dx/dex/file/AnnotationSetRefItem
+Event: 1.660 loading class com/android/dx/dex/file/AnnotationSetRefItem done
+Event: 1.701 loading class java/util/DualPivotQuicksort
+Event: 1.701 loading class java/util/DualPivotQuicksort done
+Event: 1.761 loading class com/android/dx/dex/file/MethodAnnotationStruct
+Event: 1.761 loading class com/android/dx/dex/file/MethodAnnotationStruct done
+
+
+Dynamic libraries:
