@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name="is.com.Currency_Converter" />
-        <activity android:name="is.com.RandomGame"></activity>
+        <activity android:name="is.com.RandomGame" />
+        <activity android:name="is.com.ConnectGame"></activity>
     </application>
 
 </manifest>
