@@ -7,7 +7,7 @@
     <dimen name="left_side_c3">15dp</dimen>
     <dimen name="top_side_r1">5dp</dimen>
     <dimen name="top_side_r2">15dp</dimen>
-    <dimen name="D30">20dp</dimen>
-    <dimen name="D25">15dp</dimen>
-    <dimen name="D10">5dp</dimen>
+    <dimen name="D20">20dp</dimen>
+    <dimen name="D15">15dp</dimen>
+    <dimen name="D05">5dp</dimen>
 </resources>
