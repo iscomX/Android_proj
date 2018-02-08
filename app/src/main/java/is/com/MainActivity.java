@@ -11,9 +11,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.example.iscom.sharedprefs.R;
+
+import junit.framework.Test;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -65,30 +66,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.action_settings) {
             return true;
         }
-        if (id == R.id.allmail_id) {
-            try {
-                goToClass("RandomGame.class");
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
-
-        } else if (id == R.id.drafts_id) {
+        if (id == R.id.menu_01) {
+            Intent myIntent = new Intent(this, Currency_Converter.class);
+            startActivity(myIntent);
+        } else if (id == R.id.menu_02) {
             Intent myIntent = new Intent(this, RandomGame.class);
             startActivity(myIntent);
-
-        } else if (id == R.id.inbox_id) {
+        } else if (id == R.id.menu_03) {
             Intent myIntent = new Intent(this, ConnectGame.class);
             startActivity(myIntent);
-        } else if (id == R.id.sent_id) {
-            Toast.makeText(getApplicationContext(), "item1 is selected", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.menu_04) {
+            Intent myIntent = new Intent(this, Media.class);
+            startActivity(myIntent);
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void goToClass(String classes) {
-        Intent myIntent = new Intent(this, classes);
-        startActivity(myIntent);
     }
 
 
@@ -96,28 +88,34 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         switch (id) {
-            case R.id.inbox_id:
-                Toast.makeText(getApplicationContext(), "inbox", Toast.LENGTH_LONG).show();
+            case R.id.menu_01:
+                Intent myIntent = new Intent(this, Test.class);
+                startActivity(myIntent);
                 break;
-            case R.id.starred_id:
-                Toast.makeText(getApplicationContext(), "starred", Toast.LENGTH_LONG).show();
+            case R.id.menu_02:
+                myIntent = new Intent(this, Currency_Converter.class);
+                startActivity(myIntent);
                 break;
-            case R.id.sent_id:
-                Toast.makeText(getApplicationContext(), "sent mail", Toast.LENGTH_LONG).show();
+            case R.id.menu_03:
+                myIntent = new Intent(this, RandomGame.class);
+                startActivity(myIntent);
                 break;
-            case R.id.drafts_id:
-                Toast.makeText(getApplicationContext(), "drafts", Toast.LENGTH_LONG).show();
+            case R.id.menu_04:
+                myIntent = new Intent(this, ConnectGame.class);
+                startActivity(myIntent);
                 break;
-            case R.id.allmail_id:
-                Toast.makeText(getApplicationContext(), "all mail", Toast.LENGTH_LONG).show();
+            case R.id.menu_051:
+                myIntent = new Intent(this, Media.class);
+                startActivity(myIntent);
                 break;
-            case R.id.trash_id:
-                Toast.makeText(getApplicationContext(), "trash", Toast.LENGTH_LONG).show();
+            case R.id.menu_052:
+                myIntent = new Intent(this, Media.class);
+                startActivity(myIntent);
                 break;
-            case R.id.spam_id:
-                Toast.makeText(getApplicationContext(), "spam", Toast.LENGTH_LONG).show();
+            case R.id.menu_053:
+                myIntent = new Intent(this, Media.class);
+                startActivity(myIntent);
                 break;
-
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);

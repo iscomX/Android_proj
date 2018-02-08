@@ -6,22 +6,22 @@
 
 
         <item
-            android:id="@+id/inbox_id"
+            android:id="@+id/menu_01"
             android:icon="@drawable/inbox"
             android:title="inbox" />
 
         <item
-            android:id="@+id/starred_id"
+            android:id="@+id/menu_02"
             android:icon="@drawable/starred"
             android:title="starred" />
 
         <item
-            android:id="@+id/sent_id"
+            android:id="@+id/menu_03"
             android:icon="@drawable/sent"
             android:title="sent_mail" />
 
         <item
-            android:id="@+id/drafts_id"
+            android:id="@+id/menu_04"
             android:icon="@drawable/drafts"
             android:title="drafts" />
 
@@ -36,19 +36,19 @@
 
 
             <item
-                android:id="@+id/allmail_id"
+                android:id="@+id/menu_051"
                 android:icon="@drawable/allmail"
                 android:title="all_mail" />
 
 
             <item
-                android:id="@+id/trash_id"
+                android:id="@+id/menu_052"
                 android:icon="@drawable/trash"
                 android:title="trash" />
 
 
             <item
-                android:id="@+id/spam_id"
+                android:id="@+id/menu_053"
                 android:icon="@drawable/spam"
                 android:title="spam" />
 

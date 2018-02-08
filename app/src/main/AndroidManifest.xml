@@ -22,7 +22,7 @@
         <activity android:name="is.com.RandomGame" />
         <activity android:name="is.com.ConnectGame" />
         <activity android:name="is.com.Media" />
-        <activity android:name="is.com.test"></activity>
+        <activity android:name="is.com.Test"></activity>
     </application>
 
 </manifest>
