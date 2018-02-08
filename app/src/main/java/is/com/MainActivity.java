@@ -2,23 +2,20 @@ package is.com;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.iscom.sharedprefs.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     Toolbar toolbar;
     DrawerLayout drawerLayout;
@@ -35,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
 
+        navigationView.setNavigationItemSelectedListener(this);
+
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_drawer, R.string.close_drawer);
         drawerLayout.setDrawerListener(toggle);
 
@@ -44,13 +43,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
+
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+
+            drawerLayout.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }
-
     }
 
     @Override
@@ -66,81 +65,67 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-        if (id == R.id.menu_1) {
-            Intent myIntent = new Intent(this, Currency_Converter.class);
-            startActivity(myIntent);
+        if (id == R.id.allmail_id) {
+            try {
+                goToClass("RandomGame.class");
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
 
-        } else if (id == R.id.menu_2) {
+        } else if (id == R.id.drafts_id) {
             Intent myIntent = new Intent(this, RandomGame.class);
             startActivity(myIntent);
 
-        } else if (id == R.id.menu_3) {
+        } else if (id == R.id.inbox_id) {
             Intent myIntent = new Intent(this, ConnectGame.class);
             startActivity(myIntent);
-        } else if (id == R.id.menu_4) {
+        } else if (id == R.id.sent_id) {
             Toast.makeText(getApplicationContext(), "item1 is selected", Toast.LENGTH_SHORT).show();
         }
-
-
 
         return super.onOptionsItemSelected(item);
     }
 
+    public void goToClass(String classes) {
+        Intent myIntent = new Intent(this, classes);
+        startActivity(myIntent);
+    }
 
-    // tbadar taswat wi gha klik 7o boton
 
-    public void image() {
-        Integer random = (int) (Math.random() * 10);
-        Integer str = 0;
-        ImageView img = (ImageView) findViewById(R.id.id_imageView_1);
-        switch (random) {
-            case 1:
-                str = R.drawable.img_a;
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.inbox_id:
+                Toast.makeText(getApplicationContext(), "inbox", Toast.LENGTH_LONG).show();
                 break;
-            case 2:
-                str = R.drawable.img_b;
+            case R.id.starred_id:
+                Toast.makeText(getApplicationContext(), "starred", Toast.LENGTH_LONG).show();
                 break;
-            case 3:
-                str = R.drawable.img_c;
+            case R.id.sent_id:
+                Toast.makeText(getApplicationContext(), "sent mail", Toast.LENGTH_LONG).show();
                 break;
-            case 4:
-                str = R.drawable.img_d;
+            case R.id.drafts_id:
+                Toast.makeText(getApplicationContext(), "drafts", Toast.LENGTH_LONG).show();
                 break;
-            case 5:
-                str = R.drawable.img_e;
+            case R.id.allmail_id:
+                Toast.makeText(getApplicationContext(), "all mail", Toast.LENGTH_LONG).show();
                 break;
-            case 6:
-                str = R.drawable.img_f;
+            case R.id.trash_id:
+                Toast.makeText(getApplicationContext(), "trash", Toast.LENGTH_LONG).show();
                 break;
-            case 7:
-                str = R.drawable.img_g;
+            case R.id.spam_id:
+                Toast.makeText(getApplicationContext(), "spam", Toast.LENGTH_LONG).show();
                 break;
-            case 8:
-                str = R.drawable.img_h;
-                break;
-            case 9:
-                str = R.drawable.img_i;
-                break;
+
         }
 
-        img.setImageResource(str);
-        Log.i("info", "random : " + random);
+        drawerLayout.closeDrawer(GravityCompat.START);
 
+        return true;
 
     }
 
 
-    public void clickAction(View view) {
-        EditText Name = (EditText) findViewById(R.id.id_EditText_Name);
-        EditText Password = (EditText) findViewById(R.id.id_EditText_Password);
-
-        Log.i("info", "random : ");
-
-        //Toast
-        Toast.makeText(MainActivity.this, "name : " + Name.getText().toString() +
-                " -- password : " + Password.getText().toString(), Toast.LENGTH_LONG).show();
-
-        image();
-    }
 
 }

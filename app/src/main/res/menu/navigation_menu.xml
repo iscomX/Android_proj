@@ -6,22 +6,22 @@
 
 
         <item
-            android:id="@+id/menu_1"
+            android:id="@+id/inbox_id"
             android:icon="@drawable/inbox"
-            android:title="@string/Currency_Convert" />
+            android:title="inbox" />
 
         <item
-            android:id="@+id/menu_2"
+            android:id="@+id/starred_id"
             android:icon="@drawable/starred"
-            android:title="@string/Random_Game" />
+            android:title="starred" />
 
         <item
-            android:id="@+id/menu_3"
+            android:id="@+id/sent_id"
             android:icon="@drawable/sent"
             android:title="sent_mail" />
 
         <item
-            android:id="@+id/menu_4"
+            android:id="@+id/drafts_id"
             android:icon="@drawable/drafts"
             android:title="drafts" />
 
@@ -36,16 +36,19 @@
 
 
             <item
+                android:id="@+id/allmail_id"
                 android:icon="@drawable/allmail"
                 android:title="all_mail" />
 
 
             <item
+                android:id="@+id/trash_id"
                 android:icon="@drawable/trash"
                 android:title="trash" />
 
 
             <item
+                android:id="@+id/spam_id"
                 android:icon="@drawable/spam"
                 android:title="spam" />
 
